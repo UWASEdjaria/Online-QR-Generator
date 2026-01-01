@@ -1,6 +1,7 @@
+/** @jsxImportSource react */
+import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import './globals.css'
-import { ReactNode } from 'react'
 
 export const metadata = {
   title: 'QR Generator',
