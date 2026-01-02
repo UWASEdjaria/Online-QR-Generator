@@ -18,7 +18,7 @@ export default function QRForm({ onGenerate, onSave }: QRFormProps) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label className="block text-sm font-medium mb-2">
+        <label className="block text-sm font-medium mb-2 text-gray-600">
           Enter text or URL:
         </label>
         <input
@@ -26,7 +26,7 @@ export default function QRForm({ onGenerate, onSave }: QRFormProps) {
           value={content}
           onChange={(e) => setContent(e.target.value)}
           placeholder="Enter text or URL to generate QR code"
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="text-gray-400 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
         />
       </div>
       <button

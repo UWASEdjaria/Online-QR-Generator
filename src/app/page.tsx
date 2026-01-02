@@ -9,6 +9,8 @@ import {
   Youtube,
   MessageCircle,
 } from "lucide-react";
+import BackgroundSelector from "./components/BackgroundSelector";
+import QRForm from "./components/QRForm";
 
 export default function HomePage() {
   const [step, setStep] = useState(0);
@@ -107,9 +109,12 @@ export default function HomePage() {
             <h3 className="font-semibold text-black">Color Palette</h3>
             <div className="flex gap-4 items-center">
               <div className="flex flex-col">
+                 <BackgroundSelector onChange={function (color: string): void {} }
+                 />
                 <label className="text-black font-medium">Primary color</label>
                 <input type="color" defaultValue="#527ac9" className="w-12 h-8 cursor-pointer" />
               </div>
+
               <div className="flex flex-col">
                 <label className="text-black font-medium">Secondary color</label>
                 <input type="color" defaultValue="#7ec09f" className="w-12 h-8 cursor-pointer" />
@@ -214,8 +219,14 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          <QRForm onGenerate={function (content: string): void {
+            throw new Error("Function not implemented.");
+          } } onSave={function (data: { content: string; color: string; bgColor: string; }): void {
+            throw new Error("Function not implemented.");
+          } } />
         </div>
       )}
+     
     </div>
   );
 }

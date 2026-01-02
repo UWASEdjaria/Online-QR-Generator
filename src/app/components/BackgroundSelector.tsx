@@ -5,7 +5,7 @@ interface BackgroundSelectorProps {
 export default function BackgroundSelector({ onChange }: BackgroundSelectorProps) {
   return (
     <div>
-      <label className="block text-sm font-medium mb-1">Background Color:</label>
+      <label className="block mb-1 text-black font-medium ">Background Color:</label>
       <input 
         type="color" 
         defaultValue="#ffffff"
