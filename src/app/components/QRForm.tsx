@@ -26,12 +26,12 @@ export default function QRForm({ onGenerate, onSave }: QRFormProps) {
           value={content}
           onChange={(e) => setContent(e.target.value)}
           placeholder="Enter text or URL to generate QR code"
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
         />
       </div>
       <button
         type="submit"
-        className="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 transition-colors"
+        className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 transition-colors"
       >
         Generate QR Code
       </button>
